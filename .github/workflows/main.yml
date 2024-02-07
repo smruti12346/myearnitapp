@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [ production ]
+    branches: [ prod ]
   pull_request:
-    branches: [ production ]
+    branches: [ prod ]
   repository_dispatch:
     types: [post_create]  
       
