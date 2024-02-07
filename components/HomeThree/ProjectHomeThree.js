@@ -21,15 +21,16 @@ function ProjectHomeThree({ className }) {
                 data-wow-delay="400ms"
               >
                 <h4 className="title">
-                  Start your project <br />
-                  with EarnIt.
+                  Need more help? No problem! Contact our phenomenal
+                  <br />
+                  support team!
                 </h4>
-                <Link
+                <a
                   className="main-btn"
-                  href="/contact"
+                  href="mailto:support@myearnitapp.com"
                 >
-                  Let’s Talk
-                </Link>
+                  Email a Human
+                </a>
               </div>
             </div>
           </div>

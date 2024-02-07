@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         <HeaderHomeThree action={drawerAction.toggle} />
 
         {children}
-        <ProjectHomeThree />
+        {/* <ProjectHomeThree /> */}
         <FooterHomeThree />
         <BackToTop className="back-to-top-3" />
       </body>

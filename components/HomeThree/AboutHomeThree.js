@@ -218,10 +218,11 @@ function AboutHomeThree() {
           <div className="row align-items-center mt-100 flex-column-reverse flex-lg-row">
             <div className="col-lg-6">
               <div className="appie-traffic-title">
-                <h3 className="title">Browse over 40k Apps over the world</h3>
+                <h3 className="title">Goals, Rewards, or Both?</h3>
                 <p>
-                  He nicked it tickety boo harry the cras bargy chap mush
-                  spiffing spend a penny the full monty burke butty.
+                  Rewards are used with tokens. Kids earn tokens and redeem them
+                  toward rewards, unlike goals where task values are applied
+                  automatically toward the goal when completed and approved.
                 </p>
               </div>
               <div className="row">
@@ -235,8 +236,12 @@ function AboutHomeThree() {
                         alt=""
                       />
                     </div>
-                    <h5 className="title">User Interactive</h5>
-                    <p>Mucker plastered bugger all mate morish are.</p>
+                    <h5 className="title">Goals</h5>
+                    <ul>
+                      <li>For tasks with due dates.</li>
+                      <li>For tasks that repeat on a schedule.</li>
+                      <li>For tasks that block apps.</li>
+                    </ul>
                   </div>
                 </div>
                 <div className="col-sm-6">
@@ -249,8 +254,12 @@ function AboutHomeThree() {
                         alt=""
                       />
                     </div>
-                    <h5 className="title">Choose a App</h5>
-                    <p>Mucker plastered bugger all mate morish are.</p>
+                    <h5 className="title">Rewards</h5>
+                    <ul>
+                      <li>Redeemed with Tokens.</li>
+                      <li>Can be redeemed continuously.</li>
+                      <li>Tasks associated are continuous.</li>
+                    </ul>
                   </div>
                 </div>
                 <div className="col-lg-12">

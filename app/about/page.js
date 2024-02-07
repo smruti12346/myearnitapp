@@ -4,8 +4,7 @@ import thumb from "@/assets/images/about-thumb-2.png";
 const HeroPages = dynamic(() => import("@/components/HeroPages"));
 export default function Page() {
   const title1 = "About Us";
-  const desc =
-    "Start your project with EarnIt to <br/>Families who work and play<br/> together, stay together.";
+  const desc = "Families who work and play<br/> together, stay together.";
   return (
     <>
       <HeroPages

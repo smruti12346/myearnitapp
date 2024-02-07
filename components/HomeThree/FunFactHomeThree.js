@@ -33,7 +33,7 @@ function FunFactHomeThree() {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="appie-fun-fact-content">
-                      <h3 className="title">Get started with EarnIt App.</h3>
+                      <h3 className="title">Get Started With EarnIt!</h3>
                       <p>The chore App for kids</p>
                       <div className="row">
                         <div className="col-sm-4">
@@ -45,7 +45,7 @@ function FunFactHomeThree() {
                               />
                               k
                             </h4>
-                            <span>App Downloads</span>
+                            <span>Chores Created</span>
                           </div>
                         </div>
                         <div className="col-sm-4">
