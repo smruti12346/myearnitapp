@@ -1,17 +1,31 @@
 import { api_url } from "@/Auth";
 import HeroPages from "@/components/HeroPages";
+
+export async function generateStaticParams() {
+  const postsResponse = await fetch(
+    "https://myearnitapp.com/blog/wp-json/wp/v2/pages?categories=33&per_page=100"
+  );
+
+  const posts = await postsResponse.json();
+
+  return posts.map((post) => ({
+    single: String(post.slug),
+  }));
+}
+
 const getData = async (slug) => {
   const res = await fetch(`${api_url}/pages?slug=${slug}`, {
     next: {
       revalidate: 2,
     },
   });
-  const data = await res.json();
-  return data;
+  const data1 = await res.json();
+  return data1;
 };
-const Page = async (props) => {
+
+const Page = async ({params}) => {
   const title1 = "";
-  let data = await getData(props.params.single);
+  let data = await getData(params.single);
   return (
     <div>
       <HeroPages
@@ -89,3 +103,41 @@ const Page = async (props) => {
 };
 
 export default Page;
+
+// export async function getStaticSideProps(context) {
+//   const id = context.params?.slug;
+//   const postResponse = await fetch(
+//     "https://myearnitapp.com/blog/wp-json/wp/v2/pages?categories=33&per_page=100"
+//   );
+//   const post = await postResponse.json();
+
+//   return {
+//     props: {
+//       post,
+//     },
+//   };
+// }
+
+
+
+// export async function getStaticPaths() {
+//   const res = await fetch(
+//     `https://myearnitapp.com/blog/wp-json/wp/v2/pages?categories=33&per_page=100`
+//   );
+//   const pages = await res.json();
+//   const paths = pages.map((item) => ({
+//     params: { slug: `${item.slug}` },
+//   }));
+//   // const paths = [{params: {slug: ''}}]
+//   return { paths: paths, fallback: false };
+// }
+
+// export async function getStaticProps(slug) {
+//   //let url = router.query.slug;
+//   console.log("new resource", slug);
+//   const res = await fetch(
+//     `https://myearnitapp.com/blog/wp-json/wp/v2/pages?slug=${slug}`
+//   );
+//   const data = await res.json();
+//   return { props: { data: data[0] } };
+// }

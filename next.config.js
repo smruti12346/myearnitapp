@@ -5,6 +5,7 @@ const nextConfig = {
     domains: ["myearnitapp.com"],
     unoptimized: true,
   },
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
