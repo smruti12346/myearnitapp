@@ -21,7 +21,7 @@ function Navigation({ lang = false }) {
           <Link href="/faqs">FAQs</Link>
         </li>
         <li>
-          <Link href="https://myearnitapp.com/blog/">Blog</Link>
+          <a href="https://myearnitapp.com/blog/">Blog</a>
         </li>
         {/* <li>
           <Link href="#">Contact</Link>
