@@ -148,6 +148,17 @@ function FooterHomeThree({ className }) {
               </div>
             </div>
           </div>
+          <div
+            style={{ textAlign: "center", marginTop: "30px", fontSize: "14px" }}
+          >
+            Developed by -{" "}
+            <a
+              style={{ color: "#4cd54bf5 " }}
+              href="https://digitalvate.com/"
+            >
+              Digitalvate
+            </a>
+          </div>
         </div>
       </section>
     </>
